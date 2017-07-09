@@ -1,5 +1,10 @@
 package com.oddle.app.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 /**
@@ -8,5 +13,10 @@ import javax.persistence.MappedSuperclass;
  * Time: 00:58
  */
 @MappedSuperclass
-public abstract class BaseEntity {
+@Getter
+@Setter
+public class BaseEntity {
+    @Id
+    @GeneratedValue
+    public Long id;
 }
