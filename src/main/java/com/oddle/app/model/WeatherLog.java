@@ -9,4 +9,11 @@ import javax.persistence.Entity;
  */
 @Entity
 public class WeatherLog extends BaseEntity {
+
+    private Long dateLog;
+    private Float windSpeed;
+    private Integer cloudPercentage;
+    private Float temp;
+    private Float hpa;
+
 }

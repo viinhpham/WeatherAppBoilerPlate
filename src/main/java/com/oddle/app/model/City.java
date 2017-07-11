@@ -17,6 +17,8 @@ import java.util.Set;
 @Getter
 @Setter
 public class City extends BaseEntity {
+    private String name;
+    private String country;
     @OneToMany(cascade = CascadeType.ALL)
     private Set<WeatherLog> weatherLogs;
 }
